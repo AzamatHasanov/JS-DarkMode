@@ -1,0 +1,198 @@
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                }
+                /* dark mode on */
+                
+                body {
+                    background-color: white;
+                    color: #222;
+                }
+                
+                body.dark {
+                    background-color: #222;
+                    color: white;
+                }
+                
+                .inputCheckbox {
+                    position: absolute;
+                    opacity: 0;
+                }
+                
+                .mod-controll i {
+                    font-size: 27px;
+                    cursor: pointer;
+                }
+                
+                .mod-controll span:nth-of-type(2) {
+                    display: none;
+                }
+                
+                .mod-controll input:checked+span {
+                    display: none;
+                }
+                
+                .mod-controll input:checked+span+span {
+                    display: inline-block;
+                }
+                /* dark mode of */
+                /* header start */
+                
+                .main-header {
+                    display: flex;
+                    justify-content: space-between;
+                    border: none;
+                    padding: 30px;
+                    box-shadow: 0px 0px 20px #4c567691;
+                }
+                
+                .main-header-ul ul {
+                    display: flex;
+                    list-style: none;
+                    gap: 20px;
+                    cursor: pointer;
+                    font-weight: 900;
+                }
+                
+                .main-header-ul ul li:hover {
+                    color: #eb2f06;
+                }
+                /* main start */
+                
+                .main {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 100px;
+                    flex-wrap: wrap;
+                }
+                
+                .text-main {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                }
+                
+                .main-icon i {
+                    font-size: 250px;
+                }
+                /* text maain */
+                
+                .text-main-ul ul {
+                    display: flex;
+                    gap: 5px;
+                    font-size: 50px;
+                    font-weight: 600;
+                    list-style: none;
+                }
+                /*? ---------------------- */
+                /* !icon decor this */
+                /*? ---------------------- */
+                
+                .main-div-sosial-icon ul {
+                    display: flex;
+                    gap: 30px;
+                    list-style: none;
+                }
+                
+                .main-div-sosial-icon ul li div {
+                    width: 70px;
+                    height: 70px;
+                    border: 1px solid red;
+                    border-radius: 50px;
+                }
+                
+                .main-div-sosial-icon ul li div:hover {
+                    transition: 0.3s;
+                    background-color: #302d2d;
+                }
+                
+                .main-div-sosial-icon ul li div i {
+                    padding: 19px;
+                    font-size: 35px;
+                    cursor: pointer;
+                }
+                
+                .text-main-ul ul li:nth-child(2) {
+                    color: #f00000;
+                    font-size: 50px;
+                }
+                /* icon start */
+                
+                .main-div-icon {
+                    border: none;
+                    padding: 60px;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 14px wheat;
+                }
+                /* telefon ekrani */
+                
+                @media (max-width: 767px) {
+                    /* header start */
+                    .mod-controll i {
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+                    .main-header {
+                        padding: 20px;
+                    }
+                    .main-header-ul ul {
+                        gap: 25px;
+                        cursor: pointer;
+                        font-weight: 500;
+                        font-size: 17px;
+                    }
+                    .main-header-ul ul li:nth-child(4) {
+                        display: none;
+                    }
+                    .main-header-ul ul li:nth-child(5) {
+                        display: none;
+                    }
+                    .main-header div h1 {
+                        font-size: 20px;
+                    }
+                    /*main start */
+                    .main {
+                        padding: 60px;
+                    }
+                    .text-main {
+                        gap: 30px;
+                    }
+                    /* text maain */
+                    .text-main-ul ul {
+                        display: flex;
+                        gap: 5px;
+                        font-size: 50px;
+                        font-weight: 600;
+                    }
+                    /* main icon start */
+                    .main-div-sosial-icon ul {
+                        gap: 30px;
+                    }
+                    .main-div-sosial-icon ul li div {
+                        width: 50px;
+                        height: 50px;
+                        border: 1px solid red;
+                    }
+                    .main-div-sosial-icon ul li div i {
+                        padding: 14px;
+                        font-size: 25px;
+                        cursor: pointer;
+                    }
+                    .text-main-ul ul li:nth-child(2) {
+                        color: #f00000;
+                        font-size: 50px;
+                    }
+                    /* icon  */
+                    .main-div-icon {
+                        margin-top: 50px;
+                        border: none;
+                        padding: 50px;
+                        border-radius: 10px;
+                        box-shadow: 0px 0px 14px wheat;
+                    }
+                    .main-icon i {
+                        font-size: 200px;
+                    }
+                }
